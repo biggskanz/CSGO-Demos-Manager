@@ -35,8 +35,8 @@
     <MultilingualFallbackLanguage>en-US</MultilingualFallbackLanguage>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLocator, Version=2.0.4.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLocator.2.0.4\lib\net45\CommonServiceLocator.dll</HintPath>
+    <Reference Include="CommonServiceLocator, Version=2.0.5.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.2.0.5\lib\net45\CommonServiceLocator.dll</HintPath>
     </Reference>
     <Reference Include="GalaSoft.MvvmLight, Version=5.4.1.0, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.dll</HintPath>
@@ -47,11 +47,11 @@
     <Reference Include="GalaSoft.MvvmLight.Platform, Version=5.4.1.0, Culture=neutral, PublicKeyToken=5f873c45e98af8a1, processorArchitecture=MSIL">
       <HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\net45\GalaSoft.MvvmLight.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
-      <HintPath>..\packages\protobuf-net.2.4.0\lib\net40\protobuf-net.dll</HintPath>
+      <HintPath>..\packages\protobuf-net.2.4.6\lib\net40\protobuf-net.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -74,11 +74,14 @@
     <Compile Include="Models\Language.cs" />
     <Compile Include="Models\Map.cs" />
     <Compile Include="Models\Maps\Agency.cs" />
+    <Compile Include="Models\Maps\Ancient.cs" />
+    <Compile Include="Models\Maps\Anubis.cs" />
     <Compile Include="Models\Maps\Austria.cs" />
     <Compile Include="Models\Maps\Biome.cs" />
     <Compile Include="Models\Maps\Cache.cs" />
     <Compile Include="Models\Maps\Canals.cs" />
     <Compile Include="Models\Maps\Cbble.cs" />
+    <Compile Include="Models\Maps\Chlorine.cs" />
     <Compile Include="Models\Maps\Coast.cs" />
     <Compile Include="Models\Maps\Cruise.cs" />
     <Compile Include="Models\Maps\Dust2.cs" />
@@ -178,6 +181,7 @@
     <EmbeddedResource Include="Properties\Resources.hu.resx" />
     <EmbeddedResource Include="Properties\Resources.it.resx" />
     <EmbeddedResource Include="Properties\Resources.ja.resx" />
+    <EmbeddedResource Include="Properties\Resources.nl.resx" />
     <EmbeddedResource Include="Properties\Resources.pl.resx" />
     <EmbeddedResource Include="Properties\Resources.pt-BR.resx" />
     <EmbeddedResource Include="Properties\Resources.pt.resx" />
@@ -188,6 +192,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.ru.resx" />
     <EmbeddedResource Include="Properties\Resources.sr-Cyrl.resx" />
+    <EmbeddedResource Include="Properties\Resources.tr-TR.resx" />
     <EmbeddedResource Include="Properties\Resources.tr.resx" />
     <EmbeddedResource Include="Properties\Resources.zh-Hans.resx" />
     <EmbeddedResource Include="Properties\Resources.zh-Hant.resx" />
@@ -298,11 +303,13 @@
     <XliffResource Include="MultilingualResources\Core.hu.xlf" />
     <XliffResource Include="MultilingualResources\Core.it.xlf" />
     <XliffResource Include="MultilingualResources\Core.ja.xlf" />
+    <XliffResource Include="MultilingualResources\Core.nl.xlf" />
     <XliffResource Include="MultilingualResources\Core.pl.xlf" />
     <XliffResource Include="MultilingualResources\Core.pt-BR.xlf" />
     <XliffResource Include="MultilingualResources\Core.pt.xlf" />
     <XliffResource Include="MultilingualResources\Core.ru.xlf" />
     <XliffResource Include="MultilingualResources\Core.sr-Cyrl.xlf" />
+    <XliffResource Include="MultilingualResources\Core.tr-TR.xlf" />
     <XliffResource Include="MultilingualResources\Core.tr.xlf" />
     <XliffResource Include="MultilingualResources\Core.zh-Hans.xlf" />
     <XliffResource Include="MultilingualResources\Core.zh-Hant.xlf" />

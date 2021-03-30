@@ -212,7 +212,8 @@ namespace Services.Concrete.Analyzer
 				demo.Tickrate = (int)Math.Round((double)header.PlaybackFrames / header.PlaybackTime);
 			}
 			demo.Duration = header.PlaybackTime;
-			demo.MapName = header.MapName;
+			// Valve maps moved from competitive to scrimmage (only mirage ATM) contains the suffix "_scrimmagemap" in the header.
+			demo.MapName = header.MapName.Replace("_scrimmagemap", "");
 			demo.Source = DetermineDemoSource(demo, header);
 			demo.Ticks = header.PlaybackTicks;
 
@@ -1243,7 +1244,11 @@ namespace Services.Concrete.Analyzer
 				HealthDamage = e.Player.HP < e.HealthDamage ? e.Player.HP : e.HealthDamage,
 				HitGroup = e.Hitgroup,
 				Weapon = weapon,
-				RoundNumber = CurrentRound.Number
+				RoundNumber = CurrentRound.Number,
+				VictimX = e.Player.Position.X,
+				VictimY = e.Player.Position.Y,
+				AttackerX = e.Attacker?.Position.X ?? 0,
+				AttackerY = e.Attacker?.Position.Y ?? 0,
 			};
 
 			Application.Current.Dispatcher.Invoke(delegate

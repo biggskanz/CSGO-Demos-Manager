@@ -1,4 +1,4 @@
-#define AppVer "2.13.11"
+#define AppVer "2.13.15"
 #define AppName "CSGO Demos Manager"
 #define ExeName "CSGODemosManager.exe"
 #define AppWebsite "https://www.csgo-demos-manager.com"
@@ -180,3 +180,6 @@ Name: "{commondesktop}\{#AppName}"; Filename: "{app}\{#ExeName}"; Tasks: desktop
 
 [Run]
 Filename: "{app}\{#ExeName}"; Description: "{cm:LaunchProgram,CSGO Demos Manager}"; Flags: nowait postinstall skipifsilent
+
+[UninstallRun]
+Filename: "{cmd}"; Parameters: "/C ""taskkill /im CSGOSuspectsBot.exe /f /t"

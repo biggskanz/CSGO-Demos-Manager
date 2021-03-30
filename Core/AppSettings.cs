@@ -14,7 +14,7 @@ namespace Core
 		public static string AUTHOR = "AkiVer";
 		public static string APP_NAME = "CSGO Demos Manager";
 		public static string APP_WEBSITE = "https://csgo-demos-manager.com";
-		public static Version APP_VERSION = new Version("2.13.11");
+		public static Version APP_VERSION = new Version("2.13.15");
 		private const string MATCH_LIST_FILENAME = "matches.dat";
 		public const string PROCESS_NAME = "CSGODemosManager";
 		public const string CSGO_PROCESS_NAME = "csgo";
@@ -23,10 +23,6 @@ namespace Core
 		public const string CORE_URI = "pack://application:,,,/csgodm.core;component/";
 		// Dummy file name created from the installer to clear data cache at the 1st start of the app
 		public const string DUMMY_CACHE_FILENAME = "cache";
-		/// <summary>
-		/// Number of demos displayed by page
-		/// </summary>
-		public const int DEMO_PAGE_COUNT = 50;
 
 		// Round end reason strings for serialization
 		public const string CT_WIN = "Counter-Terrorists win";
@@ -87,6 +83,12 @@ namespace Core
 				Key = "da-DK",
 				Name = "Danish",
 				IsEnabled = true
+			},
+			new Language
+			{
+				Key = "nl-BE",
+				Name = "Dutch",
+				IsEnabled = false
 			},
 			new Language
 			{
@@ -156,9 +158,9 @@ namespace Core
 			},
 			new Language
 			{
-				Key = "tr-TR",
+				Key = "tr",
 				Name = "Turkish",
-				IsEnabled = false
+				IsEnabled = true
 			},
 		};
 
